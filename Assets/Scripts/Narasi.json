@@ -1,0 +1,114 @@
+{
+  "days": [
+    {
+      "day": 1,
+      "title": "Narasi Pembuka (Masa Lalu)",
+      "narration": "Sejak kecil, dia terbiasa menyesuaikan diri dengan lingkungan. Takut berbeda, takut dikucilkan. Kebiasaan itu terbawa hingga dewasa—memakai topeng agar diterima. Kini, dia berdiri di depan gedung tempat dia akan bekerja, berharap masa lalu itu tidak mengikutinya.",
+      "diary": {
+        "happy": "Hari pertama terasa lebih ringan. Aku tersenyum dan mencoba ramah. Beberapa orang menyapaku, dan aku merasa punya banyak teman.",
+        "sad": "Aku lebih banyak diam. Tak ada yang benar-benar mendekat. Rasanya seperti tidak ada yang ingin berteman denganku.",
+        "mixed": "Aku mencoba berbaur, meski ragu. Setidaknya ada satu orang yang mau berbincang denganku hari ini."
+      }
+    },
+    {
+      "day": 2,
+      "title": "Hari Pertama Kerja",
+      "narration": "Dunia kerja terasa asing dan menekan. Wajah-wajah baru, aturan tak tertulis, dan ekspektasi tinggi. Dia bertekad membangun versi dirinya yang baru, meski rasa ragu masih ada.",
+      "diary": {
+        "happy": "Aku berusaha terlihat percaya diri. Banyak hal baru memang, tapi aku merasa cukup diterima.",
+        "sad": "Tekanan hari pertama membuatku menutup diri. Aku takut melakukan kesalahan.",
+        "mixed": "Aku belajar sambil menahan cemas. Tidak sempurna, tapi aku bertahan."
+      }
+    },
+    {
+      "day": 3,
+      "title": "Adaptasi Tim",
+      "narration": "Dia mulai mengenal rekan satu tim. Beberapa terbuka, sebagian menjaga jarak. Setiap interaksi membuatnya bertanya: haruskah dia menyesuaikan diri seperti dulu, atau berani berbeda?",
+      "diary": {
+        "happy": "Obrolan kecil mulai terasa hangat. Aku merasa jadi bagian dari tim.",
+        "sad": "Aku merasa terasing di tengah diskusi. Seolah aku tidak benar-benar dibutuhkan.",
+        "mixed": "Ada momen canggung, tapi juga tawa kecil. Hubungan kami belum jelas."
+      }
+    },
+    {
+      "day": 4,
+      "title": "Tekanan dari Senior",
+      "narration": "Senior mulai memberi arahan—kadang membantu, kadang menjatuhkan. Dia belajar bahwa dunia kerja bukan hanya soal kemampuan, tapi juga sikap dan citra diri.",
+      "diary": {
+        "happy": "Aku menanggapinya dengan senyum. Beberapa kritik justru membantuku berkembang.",
+        "sad": "Nada bicara mereka menusuk. Aku merasa direndahkan.",
+        "mixed": "Aku mencoba memahami maksud mereka, meski tidak semuanya terasa adil."
+      }
+    },
+    {
+      "day": 5,
+      "title": "Tuntutan Atasan",
+      "narration": "Target datang bertubi-tubi. Kesalahan kecil bisa menjadi sorotan besar. Dia bekerja keras, sering menekan perasaan demi hasil terbaik.",
+      "diary": {
+        "happy": "Aku fokus pada hasil. Meski lelah, aku bangga bisa menyelesaikannya.",
+        "sad": "Aku terus menyalahkan diri sendiri. Rasanya tidak pernah cukup.",
+        "mixed": "Aku bekerja keras, tapi hatiku terasa berat."
+      }
+    },
+    {
+      "day": 6,
+      "title": "Interaksi dengan Customer",
+      "narration": "Berhadapan langsung dengan customer membuka sisi lain dunia kerja. Ada apresiasi, ada kemarahan, ada ketidakadilan.",
+      "diary": {
+        "happy": "Beberapa customer berterima kasih. Itu membuatku merasa berarti.",
+        "sad": "Kemarahan mereka membuatku ingin menghilang.",
+        "mixed": "Ada hari buruk, tapi juga ada apresiasi kecil."
+      }
+    },
+    {
+      "day": 7,
+      "title": "Konflik di Tempat Kerja",
+      "narration": "Perbedaan pendapat berubah menjadi konflik. Bisikan dan sikap pasif-agresif mulai muncul.",
+      "diary": {
+        "happy": "Aku mencoba bersikap terbuka dan meredakan suasana.",
+        "sad": "Aku merasa disudutkan. Semua terasa salah di mataku.",
+        "mixed": "Aku memilih diam, berharap konflik ini berlalu."
+      }
+    },
+    {
+      "day": 8,
+      "title": "Lembur dan Keletihan",
+      "narration": "Hari-hari panjang membuatnya kelelahan secara fisik dan mental.",
+      "diary": {
+        "happy": "Aku capek, tapi masih bisa tersenyum. Setidaknya aku tidak sendirian.",
+        "sad": "Aku kelelahan dan merasa kosong.",
+        "mixed": "Tubuhku lelah, pikiranku pun sama."
+      }
+    },
+    {
+      "day": 9,
+      "title": "Evaluasi Kinerja",
+      "narration": "Hari evaluasi tiba. Komentar atasan membekas lebih dalam dari yang dia duga.",
+      "diary": {
+        "happy": "Masukan mereka membantuku melihat potensiku.",
+        "sad": "Kata-kata itu terus terngiang. Aku merasa gagal.",
+        "mixed": "Ada kritik dan pujian. Aku bingung harus merasa apa."
+      }
+    },
+    {
+      "day": 10,
+      "title": "Ketakutan Lama Muncul",
+      "narration": "Satu kesalahan memicu perubahan sikap rekan kerja. Ketakutan lama kembali.",
+      "diary": {
+        "happy": "Aku mencoba tetap tegar dan percaya pada diriku sendiri.",
+        "sad": "Aku kembali merasa seperti dulu—sendirian.",
+        "mixed": "Aku ragu, tapi belum ingin menyerah."
+      }
+    },
+    {
+      "day": 11,
+      "title": "Titik Penentuan",
+      "narration": "Dia harus memilih: terus memakai topeng demi bertahan, atau menerima dirinya apa adanya.",
+      "diary": {
+        "happy": "Aku memilih jujur pada diriku sendiri. Apa pun risikonya.",
+        "sad": "Aku terlalu lelah untuk terus berpura-pura.",
+        "mixed": "Aku masih ragu, tapi ingin berubah."
+      }
+    }
+  ]
+}
