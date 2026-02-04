@@ -28,6 +28,12 @@ public class NarrativeManager : MonoBehaviour
         narrativeData = JsonUtility.FromJson<NarrativeData>(narrativeJson.text);
     }
 
+    public int GetTotalDays()
+    {
+        return narrativeData.days.Length;
+    }
+
+
 
     public void ShowNarration(int currentDay)
     {

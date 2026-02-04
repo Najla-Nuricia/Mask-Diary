@@ -6,6 +6,7 @@ public class EndingManager : MonoBehaviour
     public StatsManager statsManager;
 
     public EndingType currentEnding;
+    public GameObject EndingPanel;
 
     public void DetermineEnding()
     {
@@ -23,6 +24,6 @@ public class EndingManager : MonoBehaviour
 
     void ShowEnding()
     {
-        Debug.Log("Ending: " + currentEnding);
+        
     }
 }
