@@ -49,34 +49,31 @@ public class NarrativeManager : MonoBehaviour
         return narrativeData.days[day - 1].narration;
     }
 
-  
-    public void WriteDiary(int currentDay, SocialMask mask)
+
+    public void WriteDiary(int currentDay, SocialMaskData mask)
     {
         string diary = GetDiaryText(currentDay, mask);
         StartTyping(diaryText, diary);
     }
 
-    string GetDiaryText(int day, SocialMask mask)
+    string GetDiaryText(int day, SocialMaskData mask)
     {
         if (day - 1 < 0 || day - 1 >= narrativeData.days.Length)
             return "";
 
         DayData dayData = narrativeData.days[day - 1];
 
-        switch (mask)
+        foreach (var entry in dayData.diaryEntries)
         {
-            case SocialMask.Happy:
-                return dayData.diary.happy;
-            case SocialMask.Angry:
-                return dayData.diary.sad;
-            case SocialMask.Mixed:
-                return dayData.diary.mixed;
-            default:
-                return "";
+            if (entry.mask == mask)
+                return entry.text;
         }
+
+        return "";
     }
 
-  
+
+
     void StartTyping(TMP_Text targetText, string content)
     {
         if (typingCoroutine != null)

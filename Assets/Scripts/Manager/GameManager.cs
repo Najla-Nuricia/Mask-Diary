@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     public StatsManager statsManager;
     public NarrativeManager narrativeManager;
     public EndingManager endingManager;
+    public MaskManager maskManager;
     public GameObject maskPanel;
     public GameObject mainMenuPanel;
     public GameObject introPanel;
@@ -31,32 +32,16 @@ public class GameManager : MonoBehaviour
         maskPanel.SetActive(true);
     }
 
-     
 
     private void Awake()
     {
         Instance = this;
     }
 
-    public void ChooseHappy()
-    {
-        ChooseMask(SocialMask.Happy);
-    }
 
-    public void ChooseAngry()
+    private void ChooseMask(SocialMaskData mask)
     {
-        ChooseMask(SocialMask.Angry);
-    }
-
-    public void ChooseMixed()
-    {
-        ChooseMask(SocialMask.Mixed);
-    }
-
-   
-    private void ChooseMask(SocialMask mask)
-    {
-        statsManager.ApplyMask(mask);
+        maskManager.ApplyMask(mask);
 
         maskPanel.SetActive(false);
         DiaryPanel.SetActive(true); 

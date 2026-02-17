@@ -1,22 +1,24 @@
+using UnityEngine;
+
 [System.Serializable]
 public class NarrativeData
 {
     public DayData[] days;
 }
 
+
 [System.Serializable]
 public class DayData
 {
-    public int day;
-    public string title;
     public string narration;
-    public DiaryData diary;
+    public DiaryEntry[] diaryEntries;
 }
 
+
 [System.Serializable]
-public class DiaryData
+public class DiaryEntry
 {
-    public string happy;
-    public string sad;
-    public string mixed;
+    public SocialMaskData mask;
+    [TextArea]
+    public string text;
 }
