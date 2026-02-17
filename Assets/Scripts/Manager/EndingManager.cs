@@ -1,29 +1,41 @@
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
+
+
 
 
 public class EndingManager : MonoBehaviour
 {
-    public StatsManager statsManager;
+    public MaskManager maskManager;
 
-    public EndingType currentEnding;
-    public GameObject EndingPanel;
+    public EndingData[] endings;
+
+    public TMP_Text titleText;
+    public TMP_Text descriptionText;
+    public Image illustrationImage;
+
+    public GameObject endingPanel;
 
     public void DetermineEnding()
     {
-        if (statsManager.Angry >= 7)
-            currentEnding = EndingType.Sad;
-        else if (statsManager.Happy >= 7)
-            currentEnding = EndingType.Happy;
-        else if (statsManager.mixed >= 5)
-            currentEnding = EndingType.Happy;
-        else
-            currentEnding = EndingType.Happy;
-
-        ShowEnding();
+        RIASECType result = maskManager.GetHighestRIASEC();
+        ShowEnding(result);
     }
 
-    void ShowEnding()
+    void ShowEnding(RIASECType result)
     {
-        
+        foreach (var ending in endings)
+        {
+            if (ending.type == result)
+            {
+                titleText.text = ending.title;
+                descriptionText.text = ending.description;
+                illustrationImage.sprite = ending.illustration;
+
+                endingPanel.SetActive(true);
+                break;
+            }
+        }
     }
 }

@@ -1,14 +1,12 @@
 using UnityEngine;
 
-[CreateAssetMenu(
-    fileName = "EndingData",
-    menuName = "Game/Ending Data"
-)]
-public class EndingDataSO : ScriptableObject
+[CreateAssetMenu(fileName = "NewEnding", menuName = "Game/Ending")]
+public class EndingData : ScriptableObject
 {
-    public string endingId;
-    public Sprite endingImage;
-
-    [TextArea(4, 10)]
-    public string endingText;
+    public RIASECType type;
+    public string title;
+    [TextArea]
+    public string description;
+    public Sprite illustration;
 }
+

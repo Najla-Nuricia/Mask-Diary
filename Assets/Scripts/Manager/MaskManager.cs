@@ -20,4 +20,39 @@ public class MaskManager : MonoBehaviour
     {
         maskScores[mask]++;
     }
+
+    public RIASECType GetHighestRIASEC()
+    {
+        Dictionary<RIASECType, int> typeScores =
+            new Dictionary<RIASECType, int>();
+
+
+        foreach (RIASECType type in System.Enum.GetValues(typeof(RIASECType)))
+        {
+            typeScores[type] = 0;
+        }
+
+
+        foreach (var pair in maskScores)
+        {
+            RIASECType type = pair.Key.type;
+            typeScores[type] += pair.Value;
+        }
+
+
+        RIASECType highest = RIASECType.R;
+        int max = -1;
+
+        foreach (var pair in typeScores)
+        {
+            if (pair.Value > max)
+            {
+                max = pair.Value;
+                highest = pair.Key;
+            }
+        }
+
+        return highest;
+    }
+
 }

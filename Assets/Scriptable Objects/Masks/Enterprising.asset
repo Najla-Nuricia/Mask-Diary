@@ -13,3 +13,5 @@ MonoBehaviour:
   m_Name: Enterprising
   m_EditorClassIdentifier: Assembly-CSharp::SocialMaskData
   maskName: Enterprising
+  type: 4
+  maskIcon: {fileID: 0}

@@ -9,9 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6db811c7e560c62be9602689c6c7cea7, type: 3}
-  m_Name: Investigative
-  m_EditorClassIdentifier: Assembly-CSharp::SocialMaskData
-  maskName: Investigative
-  type: 1
-  maskIcon: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: a7f183a48544cf14e8fa8a660b228f04, type: 3}
+  m_Name: R_Ending
+  m_EditorClassIdentifier: Assembly-CSharp::EndingData
+  type: 0
+  title: s
+  description: s
+  illustration: {fileID: 0}

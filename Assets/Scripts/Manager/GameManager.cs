@@ -5,7 +5,6 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance;
 
     public DayManager dayManager;
-    public StatsManager statsManager;
     public NarrativeManager narrativeManager;
     public EndingManager endingManager;
     public MaskManager maskManager;
@@ -39,7 +38,7 @@ public class GameManager : MonoBehaviour
     }
 
 
-    private void ChooseMask(SocialMaskData mask)
+    public void ChooseMask(SocialMaskData mask)
     {
         maskManager.ApplyMask(mask);
 
@@ -70,7 +69,6 @@ public class GameManager : MonoBehaviour
 
     public void ResetGame()
     {
-        dayManager.ResetDay();
-        statsManager.ResetStats();
+        
     }
 }

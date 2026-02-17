@@ -1,6 +1,7 @@
 using TMPro;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class NarrativeManager : MonoBehaviour
 {
@@ -17,6 +18,7 @@ public class NarrativeManager : MonoBehaviour
 
     private NarrativeData narrativeData;
     private Coroutine typingCoroutine;
+    public Button[] choiceButtons;
 
     private void Awake()
     {
@@ -72,8 +74,6 @@ public class NarrativeManager : MonoBehaviour
         return "";
     }
 
-
-
     void StartTyping(TMP_Text targetText, string content)
     {
         if (typingCoroutine != null)
@@ -96,4 +96,36 @@ public class NarrativeManager : MonoBehaviour
             yield return new WaitForSeconds(typingSpeed);
         }
     }
+
+    public DayData GetDay(int currentDay)
+    {
+        return narrativeData.days[currentDay - 1];
+    }
+
+    void GetButtontext()
+    {
+        for (int i = 0; i < choiceButtons.Length; i++)
+        {
+            if (i < dayData.choices.Length)
+            {
+                ChoiceData choice = dayData.choices[i];
+
+                choiceButtons[i].gameObject.SetActive(true);
+
+                TMP_Text txt = choiceButtons[i].GetComponentInChildren<TMP_Text>();
+                txt.text = choice.choiceText;
+
+                choiceButtons[i].onClick.RemoveAllListeners();
+                choiceButtons[i].onClick.AddListener(() =>
+                {
+                    OnChoiceSelected(choice);
+                });
+            }
+            else
+            {
+                choiceButtons[i].gameObject.SetActive(false);
+            }
+        }
+    }
+
 }
