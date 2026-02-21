@@ -5,20 +5,27 @@ public class MaskManager : MonoBehaviour
 {
     public List<SocialMaskData> allMasks;
 
+    private Dictionary<RIASECType, SocialMaskData> typeToMask =
+    new Dictionary<RIASECType, SocialMaskData>();
+
     private Dictionary<SocialMaskData, int> maskScores =
-        new Dictionary<SocialMaskData, int>();
+    new Dictionary<SocialMaskData, int>();
 
     void Start()
     {
         foreach (var mask in allMasks)
         {
-            maskScores[mask] = 0;
+        maskScores[mask] = 0;
+        typeToMask[mask.type] = mask;
         }
     }
 
-    public void ApplyMask(SocialMaskData mask)
+    public void ApplyMask(RIASECType type)
     {
-        maskScores[mask]++;
+        if (typeToMask.ContainsKey(type))
+        {
+        maskScores[typeToMask[type]]++;
+        }
     }
 
     public RIASECType GetHighestRIASEC()

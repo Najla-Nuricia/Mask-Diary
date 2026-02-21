@@ -52,22 +52,26 @@ public class NarrativeManager : MonoBehaviour
     }
 
 
-    public void WriteDiary(int currentDay, SocialMaskData mask)
+    public void WriteDiary(int currentDay, RIASECType type)
     {
-        string diary = GetDiaryText(currentDay, mask);
+        Debug.Log("WriteDiary DAY: " + currentDay);
+        Debug.Log("WriteDiary TYPE: " + type);
+
+        string diary = GetDiaryText(currentDay, type);
         StartTyping(diaryText, diary);
     }
 
-    string GetDiaryText(int day, SocialMaskData mask)
+    string GetDiaryText(int day, RIASECType type)
     {
         if (day - 1 < 0 || day - 1 >= narrativeData.days.Length)
-            return "";
+        return "";
 
         DayData dayData = narrativeData.days[day - 1];
-
+        
         foreach (var entry in dayData.diaryEntries)
         {
-            if (entry.mask == mask)
+            Debug.Log("ENTRY TYPE: " + entry.type);
+            if (entry.type == type)
                 return entry.text;
         }
 
@@ -102,8 +106,15 @@ public class NarrativeManager : MonoBehaviour
         return narrativeData.days[currentDay - 1];
     }
 
-    void GetButtontext()
+    public void SetupChoices(int currentDay)
     {
+        Debug.Log("SetupChoices DIPANGGIL, day = " + currentDay);
+
+        DayData dayData = GetDay(currentDay);
+
+        Debug.Log("Jumlah choices: " + dayData.choices.Length);
+        Debug.Log("Jumlah buttons: " + choiceButtons.Length);
+
         for (int i = 0; i < choiceButtons.Length; i++)
         {
             if (i < dayData.choices.Length)
@@ -113,12 +124,25 @@ public class NarrativeManager : MonoBehaviour
                 choiceButtons[i].gameObject.SetActive(true);
 
                 TMP_Text txt = choiceButtons[i].GetComponentInChildren<TMP_Text>();
-                txt.text = choice.choiceText;
+
+                if (txt == null)
+                {
+                    Debug.LogError("TMP_Text TIDAK DITEMUKAN di button index " + i);
+                }
+                else
+                {
+                    txt.text = choice.choiceText;
+                    Debug.Log("Set text: " + choice.choiceText);
+                }
 
                 choiceButtons[i].onClick.RemoveAllListeners();
+
+                ChoiceData capturedChoice = choice;
+                int capturedDay = currentDay;
+
                 choiceButtons[i].onClick.AddListener(() =>
                 {
-                    OnChoiceSelected(choice);
+                    OnChoiceSelected(capturedChoice, capturedDay);
                 });
             }
             else
@@ -127,5 +151,19 @@ public class NarrativeManager : MonoBehaviour
             }
         }
     }
+    void OnChoiceSelected(ChoiceData choice, int currentDay)
+    {
+        DayData dayData = GetDay(currentDay);
+
+        foreach (var entry in dayData.diaryEntries)
+        {
+            if (entry.type == choice.type)
+            {
+                StartTyping(diaryText, entry.text);
+                break;
+            }
+        }
+    }
+
 
 }

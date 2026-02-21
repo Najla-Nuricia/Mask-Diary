@@ -26,7 +26,7 @@ public class ChoiceData
 [System.Serializable]
 public class DiaryEntry
 {
-    public SocialMaskData mask;
+    public RIASECType type;
     [TextArea]
     public string text;
 }

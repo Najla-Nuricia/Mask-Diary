@@ -1,19 +1,202 @@
 {
-  "narration": "Hari pertama masuk kampus.",
-  "choices": [
-    { "type": "R", "choiceText": "Masuk ekskul robotik." },
-    { "type": "I", "choiceText": "Masuk ekskul tari." },
-    { "type": "A", "choiceText": "Masuk ekskul melukis." },
-    { "type": "S", "choiceText": "Berkenalan dengan banyak orang." },
-    { "type": "E", "choiceText": "Berjualan minuman." },
-    { "type": "C", "choiceText": "Mengepel aula." }
-  ],
-  "diaryEntries": [
-    { "type": "R", "text": "Aku merasa nyaman mengutak-atik mesin." },
-    { "type": "I", "text": "Aku menikmati memahami gerakan tubuh." },
-    { "type": "A", "text": "Melukis membuatku merasa hidup." },
-    { "type": "S", "text": "Berinteraksi membuatku berenergi." },
-    { "type": "E", "text": "Aku suka tantangan menghasilkan uang." },
-    { "type": "C", "text": "Kerapihan memberiku ketenangan." }
+  "days": [
+    {
+      "narration": "Hari 1: Hari pertama masuk kampus.",
+      "choices": [
+        { "type": 0, "choiceText": "Masuk ekskul robotik." },
+        { "type": 1, "choiceText": "Masuk ekskul tari." },
+        { "type": 2, "choiceText": "Masuk ekskul melukis." },
+        { "type": 3, "choiceText": "Berkenalan dengan banyak orang." },
+        { "type": 4, "choiceText": "Berjualan minuman." },
+        { "type": 5, "choiceText": "Mengepel aula." }
+      ],
+      "diaryEntries": [
+        { "type": 0, "text": "Aku merasa nyaman mengutak-atik mesin." },
+        { "type": 1, "text": "Aku menikmati memahami gerakan tubuh." },
+        { "type": 2, "text": "Melukis membuatku merasa hidup." },
+        { "type": 3, "text": "Berinteraksi membuatku berenergi." },
+        { "type": 4, "text": "Aku suka tantangan menghasilkan uang." },
+        { "type": 5, "text": "Kerapihan memberiku ketenangan." }
+      ]
+    },
+    {
+      "narration": "Hari 2: Mulai mengenal lingkungan kampus.",
+      "choices": [
+        { "type": 0, "choiceText": "Mencoba robot baru." },
+        { "type": 1, "choiceText": "Ikut latihan tari." },
+        { "type": 2, "choiceText": "Membuat sketsa di taman." },
+        { "type": 3, "choiceText": "Bertemu teman baru." },
+        { "type": 4, "choiceText": "Jualan snack di kantin." },
+        { "type": 5, "choiceText": "Merapikan kelas." }
+      ],
+      "diaryEntries": [
+        { "type": 0, "text": "Eksperimen robotik menyenangkan." },
+        { "type": 1, "text": "Gerakan tari semakin lancar." },
+        { "type": 2, "text": "Sketsa hari ini bagus." },
+        { "type": 3, "text": "Senang bertemu teman baru." },
+        { "type": 4, "text": "Menjual snack memberi pengalaman." },
+        { "type": 5, "text": "Kelas rapi bikin nyaman." }
+      ]
+    },
+
+    {
+      "narration": "Hari 3: Mengikuti kegiatan organisasi.",
+      "choices": [
+        { "type": 0, "choiceText": "Memperbaiki robot lama." },
+        { "type": 1, "choiceText": "Latihan tari di aula." },
+        { "type": 2, "choiceText": "Melukis mural." },
+        { "type": 3, "choiceText": "Bergabung dengan komunitas mahasiswa." },
+        { "type": 4, "choiceText": "Membuka lapak minuman." },
+        { "type": 5, "choiceText": "Membersihkan ruang seminar." }
+      ],
+      "diaryEntries": [
+        { "type": 0, "text": "Robot berjalan lancar." },
+        { "type": 1, "text": "Tarian makin kompak." },
+        { "type": 2, "text": "Mural selesai tepat waktu." },
+        { "type": 3, "text": "Senang bisa bantu komunitas." },
+        { "type": 4, "text": "Pendapatan hari ini lumayan." },
+        { "type": 5, "text": "Ruang seminar rapi dan nyaman." }
+      ]
+    },
+
+    {
+      "narration": "Hari 4: Eksperimen dan pembelajaran.",
+      "choices": [
+        { "type": 0, "choiceText": "Coba robot baru." },
+        { "type": 1, "choiceText": "Latihan tari solo." },
+        { "type": 2, "choiceText": "Melukis di studio." },
+        { "type": 3, "choiceText": "Ikut acara sosial kampus." },
+        { "type": 4, "choiceText": "Berjualan di kantin." },
+        { "type": 5, "choiceText": "Merapikan perpustakaan." }
+      ],
+      "diaryEntries": [
+        { "type": 0, "text": "Robot bereaksi lebih cepat." },
+        { "type": 1, "text": "Gerakan tari lebih halus." },
+        { "type": 2, "text": "Hasil lukisan memuaskan." },
+        { "type": 3, "text": "Senang bisa membantu acara sosial." },
+        { "type": 4, "text": "Hari ini banyak yang membeli." },
+        { "type": 5, "text": "Perpustakaan lebih rapi dari sebelumnya." }
+      ]
+    },
+
+    {
+      "narration": "Hari 5: Ujian dan evaluasi.",
+      "choices": [
+        { "type": 0, "choiceText": "Menguji robot." },
+        { "type": 1, "choiceText": "Menampilkan tari." },
+        { "type": 2, "choiceText": "Melukis untuk pameran." },
+        { "type": 3, "choiceText": "Bergabung diskusi kelompok." },
+        { "type": 4, "choiceText": "Jualan minuman di event." },
+        { "type": 5, "choiceText": "Membersihkan kelas dan lab." }
+      ],
+      "diaryEntries": [
+        { "type": 0, "text": "Ujian robotik lancar." },
+        { "type": 1, "text": "Tari tampil maksimal." },
+        { "type": 2, "text": "Pameran lukisan berhasil." },
+        { "type": 3, "text": "Diskusi sangat bermanfaat." },
+        { "type": 4, "text": "Omzet hari ini tinggi." },
+        { "type": 5, "text": "Ruang lab rapi dan bersih." }
+      ]
+    },
+
+    {
+      "narration": "Hari 6: Eksperimen mandiri.",
+      "choices": [
+        { "type": 0, "choiceText": "Membuat robot sendiri." },
+        { "type": 1, "choiceText": "Berlatih tari bebas." },
+        { "type": 2, "choiceText": "Melukis di taman kampus." },
+        { "type": 3, "choiceText": "Bertemu banyak teman baru." },
+        { "type": 4, "choiceText": "Menjual snack dan minuman." },
+        { "type": 5, "choiceText": "Merapikan aula." }
+      ],
+      "diaryEntries": [
+        { "type": 0, "text": "Robot berjalan stabil." },
+        { "type": 1, "text": "Tarian makin ekspresif." },
+        { "type": 2, "text": "Lukisan lebih berwarna." },
+        { "type": 3, "text": "Bersosialisasi menyenangkan." },
+        { "type": 4, "text": "Penjualan hari ini oke." },
+        { "type": 5, "text": "Aula bersih dan rapi." }
+      ]
+    },
+
+    {
+      "narration": "Hari 7: Lomba antar organisasi.",
+      "choices": [
+        { "type": 0, "choiceText": "Ikut lomba robotik." },
+        { "type": 1, "choiceText": "Tampil tari di pentas." },
+        { "type": 2, "choiceText": "Melukis mural lomba." },
+        { "type": 3, "choiceText": "Bergabung lomba sosial." },
+        { "type": 4, "choiceText": "Berjualan di event." },
+        { "type": 5, "choiceText": "Menata ruang lomba." }
+      ],
+      "diaryEntries": [
+        { "type": 0, "text": "Robot menang lomba!" },
+        { "type": 1, "text": "Tarian diapresiasi." },
+        { "type": 2, "text": "Mural dinilai bagus." },
+        { "type": 3, "text": "Event sosial sukses." },
+        { "type": 4, "text": "Laba tinggi." },
+        { "type": 5, "text": "Ruang lomba rapi." }
+      ]
+    },
+
+    {
+      "narration": "Hari 8: Kegiatan klub intensif.",
+      "choices": [
+        { "type": 0, "choiceText": "Belajar robot baru." },
+        { "type": 1, "choiceText": "Latihan tari panjang." },
+        { "type": 2, "choiceText": "Melukis karya besar." },
+        { "type": 3, "choiceText": "Bertemu anggota baru." },
+        { "type": 4, "choiceText": "Berjualan di kantin." },
+        { "type": 5, "choiceText": "Membersihkan aula." }
+      ],
+      "diaryEntries": [
+        { "type": 0, "text": "Robot semakin canggih." },
+        { "type": 1, "text": "Tari lebih energik." },
+        { "type": 2, "text": "Karya lebih hidup." },
+        { "type": 3, "text": "Senang bertemu anggota baru." },
+        { "type": 4, "text": "Pendapatan stabil." },
+        { "type": 5, "text": "Aula tetap rapi." }
+      ]
+    },
+
+    {
+      "narration": "Hari 9: Persiapan akhir semester.",
+      "choices": [
+        { "type": 0, "choiceText": "Periksa robot untuk ujian." },
+        { "type": 1, "choiceText": "Latihan tari final." },
+        { "type": 2, "choiceText": "Melukis persiapan pameran." },
+        { "type": 3, "choiceText": "Bantu teman belajar." },
+        { "type": 4, "choiceText": "Jualan di event kampus." },
+        { "type": 5, "choiceText": "Ruang laboratorium rapi." }
+      ],
+      "diaryEntries": [
+        { "type": 0, "text": "Robot siap menghadapi ujian." },
+        { "type": 1, "text": "Tarian sempurna." },
+        { "type": 2, "text": "Lukisan siap dipamerkan." },
+        { "type": 3, "text": "Belajar bersama teman efektif." },
+        { "type": 4, "text": "Omzet tinggi." },
+        { "type": 5, "text": "Lab bersih." }
+      ]
+    },
+
+    {
+      "narration": "Hari 10: Penutupan semester.",
+      "choices": [
+        { "type": 0, "choiceText": "Membawa robot ke pameran." },
+        { "type": 1, "choiceText": "Tampil tari di acara penutupan." },
+        { "type": 2, "choiceText": "Melukis karya terakhir." },
+        { "type": 3, "choiceText": "Mengikuti acara sosial." },
+        { "type": 4, "choiceText": "Berjualan terakhir." },
+        { "type": 5, "choiceText": "Membersihkan semua ruang." }
+      ],
+      "diaryEntries": [
+        { "type": 0, "text": "Robot diapresiasi banyak orang." },
+        { "type": 1, "text": "Tarian mendapat tepuk tangan." },
+        { "type": 2, "text": "Lukisan diapresiasi." },
+        { "type": 3, "text": "Senang ikut acara sosial." },
+        { "type": 4, "text": "Keuntungan maksimal." },
+        { "type": 5, "text": "Semua ruang rapi." }
+      ]
+    }
   ]
 }

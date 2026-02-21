@@ -23,12 +23,14 @@ public class GameManager : MonoBehaviour
         DiaryPanel.SetActive(false);
 
         narrativeManager.ShowNarration(dayManager.CurrentDay());
+        
     }
 
     public void NextToMaskPanel()
     {
         introPanel.SetActive(false);
         maskPanel.SetActive(true);
+        narrativeManager.SetupChoices(dayManager.CurrentDay());
     }
 
 
@@ -40,13 +42,15 @@ public class GameManager : MonoBehaviour
 
     public void ChooseMask(SocialMaskData mask)
     {
-        maskManager.ApplyMask(mask);
+        RIASECType type = mask.type;
+        maskManager.ApplyMask(type);
 
         maskPanel.SetActive(false);
-        DiaryPanel.SetActive(true); 
+        DiaryPanel.SetActive(true);
 
-        narrativeManager.WriteDiary(dayManager.CurrentDay(), mask);
-        
+        Debug.Log("BUTTON DIKLIK: " + type);   
+
+        narrativeManager.WriteDiary(dayManager.CurrentDay(), type); 
     }
 
     public void OnDiaryFinished()

@@ -2269,6 +2269,13 @@ MonoBehaviour:
   typingSFX: {fileID: 0}
   typingSpeed: 0.05
   narrativeJson: {fileID: 4900000, guid: e229e1a8d68df424ca5644b4956c8c61, type: 3}
+  choiceButtons:
+  - {fileID: 1837150769}
+  - {fileID: 615625432}
+  - {fileID: 2040110442}
+  - {fileID: 971251992}
+  - {fileID: 164409440}
+  - {fileID: 730432779}
 --- !u!4 &751191453
 Transform:
   m_ObjectHideFlags: 0
