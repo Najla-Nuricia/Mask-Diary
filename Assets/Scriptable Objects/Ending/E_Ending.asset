@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: E_Ending
   m_EditorClassIdentifier: Assembly-CSharp::EndingData
   type: 4
-  title: a
+  title: Kamu adalah E
   description: s
   illustration: {fileID: 0}
