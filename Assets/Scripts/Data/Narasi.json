@@ -1,201 +1,443 @@
 {
   "days": [
     {
-      "narration": "Hari 1: Hari pertama masuk kampus.",
+      "day": 1,
+      "narration": "Tahun 2087. Kota Malang tenggelam dalam kegelapan setelah perang siber besar-besaran meluluhlantakkan jaringan global. Di atas reruntuhan gedung-gedung yang hangus, berdiri satu-satunya harapan umat manusia: AKADEMI NEON — sebuah sekolah tinggi teknologi yang dibangun dari serpihan server dan generator darurat. Kamu baru saja lulus seleksi. Hari ini adalah hari pertamamu.\n\nSeorang NPC bernama KIRA, asisten AI holografik bersuara serak, menyambutmu di gerbang: 'Selamat datang, Penyintas. Di sini tidak ada nilai. Yang ada hanya keputusan. Dan setiap keputusan membentuk siapa kamu.' \n\nDi papan pengumuman darurat, ada beberapa lowongan kontribusi untuk hari pertama. Kamu hanya bisa memilih satu.",
       "choices": [
-        { "type": 0, "choiceText": "Masuk ekskul robotik." },
-        { "type": 1, "choiceText": "Masuk ekskul tari." },
-        { "type": 2, "choiceText": "Masuk ekskul melukis." },
-        { "type": 3, "choiceText": "Berkenalan dengan banyak orang." },
-        { "type": 4, "choiceText": "Berjualan minuman." },
-        { "type": 5, "choiceText": "Mengepel aula." }
+        {
+          "type": 0,
+          "choiceText": "Bantu teknisi merakit generator listrik cadangan di basement gedung C.",
+          "consequence": "Kamu merayapi kabel-kabel hangus, memilah mana yang masih hidup. Tanganmu kotor, tapi lampu menyala."
+        },
+        {
+          "type": 1,
+          "choiceText": "Bergabung dengan tim analis yang sedang memecahkan kode enkripsi dari server musuh.",
+          "consequence": "Layar terminal berpendar di wajahmu. Satu karakter salah bisa meledakkan seluruh sistem. Kamu fokus."
+        },
+        {
+          "type": 2,
+          "choiceText": "Lukis peta kota yang hancur di dinding ruang navigasi agar semua orang bisa membacanya.",
+          "consequence": "Kamu memilih cat dari kaleng-kaleng retak. Peta yang lahir dari tanganmu terasa seperti doa."
+        },
+        {
+          "type": 3,
+          "choiceText": "Jadi relawan pengantar ransum makanan ke asrama isolasi yang menampung pengungsi sakit.",
+          "consequence": "Mereka menyambutmu dengan mata kosong penuh kelelahan. Kamu senyum. Mereka balas senyum."
+        },
+        {
+          "type": 4,
+          "choiceText": "Dirikan pos barter pertama di lorong utama — tukar jasa coding dengan bahan makanan.",
+          "consequence": "Kamu tulis di papan: 'Fix bug = 1 kaleng sarden.' Dalam satu jam, antrean sudah mengular."
+        },
+        {
+          "type": 5,
+          "choiceText": "Daftarkan semua nama penyintas baru ke dalam database akademi yang kacau balau.",
+          "consequence": "Database itu berantakan seperti serpihan perang. Kamu sabar menata satu per satu. Keteraturan adalah kekuatan."
+        }
       ],
       "diaryEntries": [
-        { "type": 0, "text": "Aku merasa nyaman mengutak-atik mesin." },
-        { "type": 1, "text": "Aku menikmati memahami gerakan tubuh." },
-        { "type": 2, "text": "Melukis membuatku merasa hidup." },
-        { "type": 3, "text": "Berinteraksi membuatku berenergi." },
-        { "type": 4, "text": "Aku suka tantangan menghasilkan uang." },
-        { "type": 5, "text": "Kerapihan memberiku ketenangan." }
+        { "type": 0, "text": "Pertama kali aku pegang kunci pas sejak dunia runtuh. Ada yang aneh — tangan ini lebih tenang ketika bekerja daripada ketika diam." },
+        { "type": 1, "text": "Server musuh menyimpan lebih banyak rahasia dari yang kubayangkan. Aku belum bisa tidur. Otakku masih memproses." },
+        { "type": 2, "text": "Seseorang berdiri lama menatap petaku. Katanya, 'Ini pertama kalinya aku tahu aku ada di mana.' Aku menangis diam-diam di sudut." },
+        { "type": 3, "text": "Seorang anak kecil di asrama isolasi menggenggam tanganku dan tidak mau melepaskan. Aku duduk di sana sampai ia tertidur." },
+        { "type": 4, "text": "Hari pertama, aku sudah punya daftar pelanggan tetap. Dunia boleh hancur, tapi orang selalu butuh sesuatu dari orang lain." },
+        { "type": 5, "text": "Database selesai aku benahi. 312 nama. Aku hafal semua. Kalau tidak ada yang mencatat, seolah mereka tidak pernah ada." }
       ]
     },
     {
-      "narration": "Hari 2: Mulai mengenal lingkungan kampus.",
+      "day": 2,
+      "narration": "Pukul 03:17. Sirene berbunyi memekakkan. Bukan serangan — salah satu reaktor mini di lantai bawah mengalami overload. Panik merebak di koridor. KIRA muncul sebagai hologram retak di tengah kerumunan: 'Situasi terkendali JIKA ada yang tahu apa yang mereka lakukan. Apakah ada?'\n\nKamu maju.",
       "choices": [
-        { "type": 0, "choiceText": "Mencoba robot baru." },
-        { "type": 1, "choiceText": "Ikut latihan tari." },
-        { "type": 2, "choiceText": "Membuat sketsa di taman." },
-        { "type": 3, "choiceText": "Bertemu teman baru." },
-        { "type": 4, "choiceText": "Jualan snack di kantin." },
-        { "type": 5, "choiceText": "Merapikan kelas." }
+        {
+          "type": 0,
+          "choiceText": "Langsung turun ke ruang reaktor dan secara manual menutup valve tekanan berlebih.",
+          "consequence": "Panasnya luar biasa. Kamu memakai sarung tangan bekas las dan melakukan apa yang harus dilakukan."
+        },
+        {
+          "type": 1,
+          "choiceText": "Akses panel diagnostik dan analisis log reaktor untuk cari penyebab overload secara sistematis.",
+          "consequence": "Data berbicara. Sensor suhu nomor 7 rusak. Kamu menemukan akar masalahnya sebelum yang lain paham pertanyaannya."
+        },
+        {
+          "type": 2,
+          "choiceText": "Desain ulang sistem sinyal peringatan agar lebih mudah dibaca semua orang — termasuk yang buta huruf.",
+          "consequence": "Kamu gambar simbol-simbol intuitif. Ketika bahasa gagal, gambar yang berbicara."
+        },
+        {
+          "type": 3,
+          "choiceText": "Tenangkan massa yang panik dan koordinasikan evakuasi dengan tenang dan terstruktur.",
+          "consequence": "Suaramu bukan yang paling keras, tapi paling jernih. Orang-orang mengikutimu tanpa pertanyaan."
+        },
+        {
+          "type": 4,
+          "choiceText": "Ambil alih briefing darurat dan delegasikan tugas ke orang-orang yang kamu nilai paling kompeten.",
+          "consequence": "Kamu tidak tahu segalanya. Tapi kamu tahu siapa yang tahu. Dan itu cukup untuk menyelamatkan situasi."
+        },
+        {
+          "type": 5,
+          "choiceText": "Susun protokol darurat tertulis yang bisa digunakan di masa depan agar insiden ini tidak terulang.",
+          "consequence": "Semua orang sibuk panik. Kamu duduk, menulis. Dokumen ini akan menyelamatkan lebih banyak orang dari malam ini."
+        }
       ],
       "diaryEntries": [
-        { "type": 0, "text": "Eksperimen robotik menyenangkan." },
-        { "type": 1, "text": "Gerakan tari semakin lancar." },
-        { "type": 2, "text": "Sketsa hari ini bagus." },
-        { "type": 3, "text": "Senang bertemu teman baru." },
-        { "type": 4, "text": "Menjual snack memberi pengalaman." },
-        { "type": 5, "text": "Kelas rapi bikin nyaman." }
+        { "type": 0, "text": "Tanganku melepuh sedikit. Tapi reaktor tidak meledak. Itu sudah cukup." },
+        { "type": 1, "text": "Sensor nomor 7. Catatan: cek semua sensor lainnya besok. Kegagalan satu titik adalah gejala masalah sistemik." },
+        { "type": 2, "text": "Simbol bahaya baruku sudah dipasang di tiga titik strategis. Bahasa universal dimulai dari gambar, bukan kata." },
+        { "type": 3, "text": "Orang-orang yang tadi panik tertidur dengan aman. Aku berjaga di ujung koridor, mengawasi. Rasanya seperti menjaga api agar tetap menyala." },
+        { "type": 4, "text": "Lima orang. Lima tugas berbeda. Lima masalah selesai dalam waktu bersamaan. Inilah kekuatan mendelegasikan." },
+        { "type": 5, "text": "Protokol darurat selesai. 4 halaman. Diberi judul: 'Apa yang Harus Dilakukan Ketika Semuanya Salah.' Semoga tidak pernah dibutuhkan." }
       ]
     },
-
     {
-      "narration": "Hari 3: Mengikuti kegiatan organisasi.",
+      "day": 3,
+      "narration": "Akademi Neon kehabisan modul memori eksternal. Satu-satunya sumber yang diketahui ada di reruntuhan pusat data kota lama, 3 kilometer dari tembok akademi. Ini pertama kalinya kamu akan keluar. Di luar sana, sinyal terakhir dari skuad pengintai menunjukkan ada kelompok perompak digital — manusia yang mencuri data orang lain untuk dijual. \n\nKepala ekspedisi, DRAN, memintamu bergabung. 'Kamu tidak harus ikut. Tapi kalau tidak ada yang ikut, kita semua gelap dalam tiga hari.'",
       "choices": [
-        { "type": 0, "choiceText": "Memperbaiki robot lama." },
-        { "type": 1, "choiceText": "Latihan tari di aula." },
-        { "type": 2, "choiceText": "Melukis mural." },
-        { "type": 3, "choiceText": "Bergabung dengan komunitas mahasiswa." },
-        { "type": 4, "choiceText": "Membuka lapak minuman." },
-        { "type": 5, "choiceText": "Membersihkan ruang seminar." }
+        {
+          "type": 0,
+          "choiceText": "Jadilah penjaga perimeter — awasi jalur masuk dan keluar dengan sensor gerak rakitan.",
+          "consequence": "Kamu memasang tiga sensor di titik-titik strategis. Ketika alarm berbunyi sekali di malam hari, kamu sudah siap."
+        },
+        {
+          "type": 1,
+          "choiceText": "Pelajari pola pergerakan perompak dari log sinyal lama untuk memprediksi rute teraman.",
+          "consequence": "Data tidak berbohong. Rute utara 40% lebih aman. Ekspedisi memilih jalanmu."
+        },
+        {
+          "type": 2,
+          "choiceText": "Buat kamuflase visual untuk kendaraan ekspedisi agar tidak terlihat dari pos pengawas musuh.",
+          "consequence": "Cat, jaring, dan intuisi. Kendaraan itu kini terlihat seperti bagian dari puing-puing kota."
+        },
+        {
+          "type": 3,
+          "choiceText": "Negosiasikan perjanjian damai sementara dengan perompak agar ekspedisi bisa lewat tanpa konflik.",
+          "consequence": "Kamu menemui pemimpin mereka sendirian. Bukan dengan senjata — dengan kata-kata dan sesuatu untuk ditawarkan."
+        },
+        {
+          "type": 4,
+          "choiceText": "Pimpin seluruh ekspedisi dan buat keputusan cepat di lapangan berdasarkan situasi terkini.",
+          "consequence": "Di titik kritis, tidak ada waktu untuk rapat. Kamu putuskan. Ekspedisi bergerak."
+        },
+        {
+          "type": 5,
+          "choiceText": "Inventarisasi semua yang dibawa, lacak setiap modul yang diambil, dan catat kondisi semua anggota tim.",
+          "consequence": "Ketika pulang, kamu adalah satu-satunya yang tahu persis apa yang hilang dan apa yang didapat."
+        }
       ],
       "diaryEntries": [
-        { "type": 0, "text": "Robot berjalan lancar." },
-        { "type": 1, "text": "Tarian makin kompak." },
-        { "type": 2, "text": "Mural selesai tepat waktu." },
-        { "type": 3, "text": "Senang bisa bantu komunitas." },
-        { "type": 4, "text": "Pendapatan hari ini lumayan." },
-        { "type": 5, "text": "Ruang seminar rapi dan nyaman." }
+        { "type": 0, "text": "Malam paling sunyi yang pernah kurasakan. Lalu alarm berbunyi. Aku sudah berdiri bahkan sebelum suaranya berhenti." },
+        { "type": 1, "text": "Rute utara aman seperti prediksi. Tapi ada anomali di grid F-7 yang tidak ada di data lama. Aku catat untuk analisis besok." },
+        { "type": 2, "text": "Di kegelapan, kendaraan kami tak terlihat. Seni bukan sekadar keindahan. Seni bisa menyelamatkan nyawa." },
+        { "type": 3, "text": "Pemimpin perompak itu ternyata mantan dosen jaringan komputer. Kami sepakat berbagi akses data. Musuh kemarin, sekutu hari ini." },
+        { "type": 4, "text": "Tiga keputusan dalam dua jam. Tidak semuanya sempurna. Tapi semua orang pulang. Itu yang penting." },
+        { "type": 5, "text": "47 modul memori berhasil dibawa. 2 rusak dalam perjalanan. 1 anggota tim cedera ringan. Laporan lengkap sudah diserahkan ke DRAN." }
       ]
     },
-
     {
-      "narration": "Hari 4: Eksperimen dan pembelajaran.",
+      "day": 4,
+      "narration": "Seseorang membocorkan jadwal patroli akademi kepada kelompok luar. Akibatnya, gudang medis dirampok semalam. KIRA mengumumkan: 'Satu orang di antara kita adalah pengkhianat. Atau mungkin tidak satu.' Suasana akademi mencekam. Semua orang curiga. Kamu harus memilih bagaimana cara berkontribusi pada penyelidikan ini.",
       "choices": [
-        { "type": 0, "choiceText": "Coba robot baru." },
-        { "type": 1, "choiceText": "Latihan tari solo." },
-        { "type": 2, "choiceText": "Melukis di studio." },
-        { "type": 3, "choiceText": "Ikut acara sosial kampus." },
-        { "type": 4, "choiceText": "Berjualan di kantin." },
-        { "type": 5, "choiceText": "Merapikan perpustakaan." }
+        {
+          "type": 0,
+          "choiceText": "Periksa kondisi fisik sistem pengamanan — kunci, sensor, dan jalur masuk yang mungkin dibobol.",
+          "consequence": "Kamu temukan bekas goresan di panel kunci gudang barat. Seseorang memaksanya masuk — dari dalam."
+        },
+        {
+          "type": 1,
+          "choiceText": "Analisis log akses digital semua orang selama 72 jam terakhir untuk menemukan pola mencurigakan.",
+          "consequence": "Satu nama muncul tiga kali di waktu aneh. Kamu tidak menuduh — kamu menyerahkan data kepada DRAN."
+        },
+        {
+          "type": 2,
+          "choiceText": "Ciptakan sistem tanda tangan unik pada setiap dokumen rahasia agar mudah dilacak jika bocor.",
+          "consequence": "Setiap salinan dokumen kini punya watermark berbeda-beda. Kebocoran berikutnya akan terlacak ke sumbernya."
+        },
+        {
+          "type": 3,
+          "choiceText": "Bicara dari hati ke hati dengan orang-orang yang terlihat tertekan — pengkhianat mungkin bertindak karena terpaksa.",
+          "consequence": "Kamu menemukan seorang penyintas muda yang keluarganya disandera di luar tembok. Kasusnya lebih kompleks dari yang dikira semua orang."
+        },
+        {
+          "type": 4,
+          "choiceText": "Usulkan sistem insentif baru — siapa yang melaporkan informasi valid, mendapat jatah tambahan.",
+          "consequence": "Dalam dua jam, tiga laporan masuk. Bukan semuanya relevan. Tapi satu di antaranya memecahkan kasus."
+        },
+        {
+          "type": 5,
+          "choiceText": "Audit ulang semua protokol keamanan dan buat sistem kontrol akses berlapis yang lebih ketat.",
+          "consequence": "Kasus ini mengungkap celah besar dalam sistem. Kamu tambal semuanya sebelum ada yang sempat mengeksploitasinya lagi."
+        }
       ],
       "diaryEntries": [
-        { "type": 0, "text": "Robot bereaksi lebih cepat." },
-        { "type": 1, "text": "Gerakan tari lebih halus." },
-        { "type": 2, "text": "Hasil lukisan memuaskan." },
-        { "type": 3, "text": "Senang bisa membantu acara sosial." },
-        { "type": 4, "text": "Hari ini banyak yang membeli." },
-        { "type": 5, "text": "Perpustakaan lebih rapi dari sebelumnya." }
+        { "type": 0, "text": "Goresan di panel itu kecil, tapi dalam. Dibuat terburu-buru. Seseorang yang tahu tempatnya, tapi tidak punya waktu." },
+        { "type": 1, "text": "Data tidak bisa berbohong. Tapi bisa disalahartikan. Aku serahkan semua ke DRAN tanpa interpretasi. Biarkan manusia yang memutuskan." },
+        { "type": 2, "text": "Setiap dokumen kini unik seperti sidik jari. Ini bukan tentang ketidakpercayaan — ini tentang akuntabilitas." },
+        { "type": 3, "text": "Namanya Varo. 16 tahun. Ibunya disandera. Ia menangis ketika aku bilang kita akan bantu. Aku tidak tahu bagaimana, tapi aku berjanji." },
+        { "type": 4, "text": "Sistem insentif bekerja lebih cepat dari interogasi. Orang bergerak ketika ada sesuatu yang dimenangkan." },
+        { "type": 5, "text": "Celah keamanan: 7 titik. Semuanya sudah ditambal. Laporan audit: 14 halaman. Diserahkan pagi ini. Sistem baru mulai berlaku besok." }
       ]
     },
-
     {
-      "narration": "Hari 5: Ujian dan evaluasi.",
+      "day": 5,
+      "narration": "Di tengah semua ketegangan, dewan akademi memutuskan hal yang tidak terduga: mengadakan 'Festival Sinyal' — satu malam di mana semua orang berhenti bekerja dan merayakan bahwa mereka masih hidup. KIRA berkata dengan suara lebih lembut dari biasanya: 'Manusia tidak bisa hanya bertahan hidup. Mereka perlu alasan untuk bertahan hidup.'\n\nKamu diberi peran untuk berkontribusi pada festival ini.",
       "choices": [
-        { "type": 0, "choiceText": "Menguji robot." },
-        { "type": 1, "choiceText": "Menampilkan tari." },
-        { "type": 2, "choiceText": "Melukis untuk pameran." },
-        { "type": 3, "choiceText": "Bergabung diskusi kelompok." },
-        { "type": 4, "choiceText": "Jualan minuman di event." },
-        { "type": 5, "choiceText": "Membersihkan kelas dan lab." }
+        {
+          "type": 0,
+          "choiceText": "Rakit instalasi cahaya dari LED dan material daur ulang untuk menghias halaman utama.",
+          "consequence": "Ratusan titik cahaya berpendar di malam gelap. Orang-orang berdiri diam, menatap ke atas."
+        },
+        {
+          "type": 1,
+          "choiceText": "Ciptakan simulasi bintang holografik menggunakan proyektor darurat dan algoritma posisi bintang asli.",
+          "consequence": "Pertama kalinya dalam dua tahun, orang-orang melihat langit berbintang — walau palsu. Air mata mengalir tanpa malu."
+        },
+        {
+          "type": 2,
+          "choiceText": "Pimpin sesi ekspresi bebas: musik, gambar, puisi — siapapun boleh tampil.",
+          "consequence": "Seorang kakek tua berdiri membacakan puisi tentang istrinya yang hilang. Semua orang diam. Itulah seni yang paling jujur."
+        },
+        {
+          "type": 3,
+          "choiceText": "Fasilitasi sesi 'Cerita Penyintas' — setiap orang berbagi dari mana mereka berasal.",
+          "consequence": "Dua puluh cerita. Dua puluh kehilangan berbeda. Tapi di akhir malam, semua orang merasa kurang sendirian."
+        },
+        {
+          "type": 4,
+          "choiceText": "Kelola logistik festival — makanan, jadwal, penampil, dan keamanan acara.",
+          "consequence": "Festival berjalan mulus bukan karena keberuntungan. Karena kamu memastikan setiap detail sudah diperhitungkan."
+        },
+        {
+          "type": 5,
+          "choiceText": "Dokumentasikan seluruh festival — foto, catatan, dan arsip — sebagai memori kolektif akademi.",
+          "consequence": "Bertahun-tahun kemudian, orang-orang akan membuka arsipmu dan mengingat malam ketika mereka pertama kali tertawa lagi."
+        }
       ],
       "diaryEntries": [
-        { "type": 0, "text": "Ujian robotik lancar." },
-        { "type": 1, "text": "Tari tampil maksimal." },
-        { "type": 2, "text": "Pameran lukisan berhasil." },
-        { "type": 3, "text": "Diskusi sangat bermanfaat." },
-        { "type": 4, "text": "Omzet hari ini tinggi." },
-        { "type": 5, "text": "Ruang lab rapi dan bersih." }
+        { "type": 0, "text": "Mereka bilang instalasiku terlihat seperti bintang jatuh yang membeku. Aku tidak berencana itu. Tapi itulah yang keluar dari tangan dan material." },
+        { "type": 1, "text": "Algoritma bintangku berdasarkan posisi langit malam ini, koordinat lintang Bandung. Palsu? Ya. Tapi secara astronomis akurat." },
+        { "type": 2, "text": "Puisi kakek Suto tentang istrinya. Beliau menggamil kertas lusuh dari saku. Sudah ditulis bertahun-tahun lalu. Menunggu momen ini." },
+        { "type": 3, "text": "Seorang anak bernama Lila bilang ia berasal dari kota yang sudah tidak ada di peta. Aku catat nama kotanya. Agar tidak benar-benar hilang." },
+        { "type": 4, "text": "Festival selesai tanpa insiden. 340 orang hadir. 12 penampil. Konsumsi habis tepat di akhir acara. Margin kesalahan: nol." },
+        { "type": 5, "text": "Aku foto setiap momen. Rekam setiap nama yang tampil. Kenangan adalah satu-satunya hal yang tidak bisa dirampok perompak." }
       ]
     },
-
     {
-      "narration": "Hari 6: Eksperimen mandiri.",
+      "day": 6,
+      "narration": "Berita buruk: sistem filtrasi air akademi mulai gagal. Teknisi utama, MERA, pingsan karena kelelahan. Kamu harus mengambil alih sebagian tanggung jawab. Ini bukan latihan. Jika air habis dalam 48 jam, 300 lebih orang terancam.\n\nKamu memiliki waktu dan keahlianmu. Bagaimana kamu menggunakannya?",
       "choices": [
-        { "type": 0, "choiceText": "Membuat robot sendiri." },
-        { "type": 1, "choiceText": "Berlatih tari bebas." },
-        { "type": 2, "choiceText": "Melukis di taman kampus." },
-        { "type": 3, "choiceText": "Bertemu banyak teman baru." },
-        { "type": 4, "choiceText": "Menjual snack dan minuman." },
-        { "type": 5, "choiceText": "Merapikan aula." }
+        {
+          "type": 0,
+          "choiceText": "Buka sistem filtrasi dan perbaiki secara langsung — bahkan tanpa panduan teknis lengkap.",
+          "consequence": "Kamu bongkar sistem itu bagian per bagian. Dua jam. Tangan berlumuran lumpur teknis. Tapi air mengalir lagi."
+        },
+        {
+          "type": 1,
+          "choiceText": "Teliti manual sistem lama dan cari solusi sistemik, bukan sekadar tambal sulam sementara.",
+          "consequence": "Manual itu penuh coretan tangan MERA. Kamu decoding semua anotasinya dan menemukan desain perbaikan permanen."
+        },
+        {
+          "type": 2,
+          "choiceText": "Desain sistem distribusi air darurat berbasis gravitasi yang bisa aktif tanpa listrik.",
+          "consequence": "Solusimu tidak konvensional — tapi bekerja. MERA, setelah sadar, menyebutnya 'solusi gila yang jenius'."
+        },
+        {
+          "type": 3,
+          "choiceText": "Organisir tim relawan untuk menjalankan distribusi manual sambil sistem diperbaiki.",
+          "consequence": "Kamu tidak perbaiki pipa, tapi kamu pastikan tidak ada yang kehausan selama perbaikan berlangsung."
+        },
+        {
+          "type": 4,
+          "choiceText": "Negosiasikan peminjaman teknisi dari komunitas tetangga dengan imbalan akses data akademi.",
+          "consequence": "Dua teknisi dari komunitas Selatan tiba dalam 3 jam. Masalah selesai lebih cepat dari prediksi."
+        },
+        {
+          "type": 5,
+          "choiceText": "Buat jadwal rotasi penggunaan air darurat dan sistem prioritas untuk memaksimalkan stok yang ada.",
+          "consequence": "Dengan sistem jadwalmu, 48 jam menjadi 72 jam. Cukup waktu untuk perbaikan selesai dengan aman."
+        }
       ],
       "diaryEntries": [
-        { "type": 0, "text": "Robot berjalan stabil." },
-        { "type": 1, "text": "Tarian makin ekspresif." },
-        { "type": 2, "text": "Lukisan lebih berwarna." },
-        { "type": 3, "text": "Bersosialisasi menyenangkan." },
-        { "type": 4, "text": "Penjualan hari ini oke." },
-        { "type": 5, "text": "Aula bersih dan rapi." }
+        { "type": 0, "text": "Tidak ada panduan? Tidak masalah. Kamu baca mesin seperti membaca wajah seseorang — dengan sabar dan perhatian penuh." },
+        { "type": 1, "text": "MERA menulis di margin manual: 'Jika ini gagal, coba bypass valve sekunder.' Ia sudah antisipasi ini bertahun-tahun lalu. Jenius yang lelah." },
+        { "type": 2, "text": "Gravitasi tidak pernah padam. Itu filosofi sistemku. Alam semesta sendiri yang menjadi engineernya." },
+        { "type": 3, "text": "40 relawan. Ember-ember plastik bekas. Antrian tertib. Air sampai ke semua orang. Terkadang solusi paling sederhana adalah yang terbaik." },
+        { "type": 4, "text": "Pak Seto dari komunitas Selatan memperbaiki sistem dalam 90 menit. Aku catat namanya untuk referensi masa depan. Jaringan adalah aset." },
+        { "type": 5, "text": "Jadwal distribusi air: 6 shift, 3 zona, 12 poin distribusi. Efisiensi meningkat 60%. Tidak ada yang kekurangan. Angka-angka itu penyelamat nyawa." }
       ]
     },
-
     {
-      "narration": "Hari 7: Lomba antar organisasi.",
+      "day": 7,
+      "narration": "Pukul 02:00 malam, sistem komunikasi akademi menangkap sesuatu yang tidak pernah ada sebelumnya: sinyal terenkripsi dari lokasi tidak dikenal, berulang setiap 4 jam. Isi pesannya belum terdekripsi. KIRA menganalisis pola frekuensinya: 'Ini bukan noise. Ini terstruktur. Seseorang mengirim pesan.'\n\nSemua orang bertanya-tanya: kawan atau lawan? Akademi harus memutuskan bagaimana merespons.",
       "choices": [
-        { "type": 0, "choiceText": "Ikut lomba robotik." },
-        { "type": 1, "choiceText": "Tampil tari di pentas." },
-        { "type": 2, "choiceText": "Melukis mural lomba." },
-        { "type": 3, "choiceText": "Bergabung lomba sosial." },
-        { "type": 4, "choiceText": "Berjualan di event." },
-        { "type": 5, "choiceText": "Menata ruang lomba." }
+        {
+          "type": 0,
+          "choiceText": "Bangun antena penangkap sinyal yang lebih kuat di atap gedung tertinggi untuk memperkuat transmisi.",
+          "consequence": "Sinyal yang tadinya putus-putus kini jernih. Kamu membangun jembatan frekuensi dari nol."
+        },
+        {
+          "type": 1,
+          "choiceText": "Dekripsi pesan itu menggunakan metode kriptografi yang kamu pelajari dari arsip server lama.",
+          "consequence": "Lapisan pertama terbuka. Isinya: koordinat. Lapisan kedua: nama. Lapisan ketiga masih terkunci — tapi kamu sedang menuju ke sana."
+        },
+        {
+          "type": 2,
+          "choiceText": "Visualisasikan pola sinyal sebagai gelombang dan cari makna tersembunyi dalam ritme dan interval transmisinya.",
+          "consequence": "Sinyalnya mengikuti pola Fibonacci. Bukan kebetulan. Seseorang yang mengirim ini tahu cara berpikir di luar konvensi."
+        },
+        {
+          "type": 3,
+          "choiceText": "Adakan pertemuan darurat semua warga akademi untuk memutuskan bersama cara merespons sinyal ini.",
+          "consequence": "Tiga puluh suara. Dua puluh lebih memilih membalas. Keputusan terbesar akademi dibuat dengan demokrasi, bukan hierarki."
+        },
+        {
+          "type": 4,
+          "choiceText": "Langsung kirim sinyal balik dengan kode identifikasi akademi — ambil inisiatif sebelum orang lain.",
+          "consequence": "Dalam 4 jam, ada respons. Sinyal balik. Kontak pertama dengan dunia luar dalam 2 tahun berhasil."
+        },
+        {
+          "type": 5,
+          "choiceText": "Dokumentasikan setiap aspek sinyal secara sistematis sebelum mengambil tindakan apapun.",
+          "consequence": "Datamu menjadi referensi paling lengkap. Keputusan apapun yang diambil akademi akan berbasis pada catatanmu."
+        }
       ],
       "diaryEntries": [
-        { "type": 0, "text": "Robot menang lomba!" },
-        { "type": 1, "text": "Tarian diapresiasi." },
-        { "type": 2, "text": "Mural dinilai bagus." },
-        { "type": 3, "text": "Event sosial sukses." },
-        { "type": 4, "text": "Laba tinggi." },
-        { "type": 5, "text": "Ruang lomba rapi." }
+        { "type": 0, "text": "Antenaku mencapai 20 meter di atas atap. Angin malam mengguncang tiang besi. Aku kencangkan baut terakhir. Sinyal masuk." },
+        { "type": 1, "text": "Koordinat di layer pertama menunjukkan lokasi 180 km sebelah timur. Ada kehidupan di sana. Bukan hanya kita yang tersisa." },
+        { "type": 2, "text": "Fibonacci dalam sinyal radio. Mereka menggunakan bahasa matematika universal. Pesan ini ditujukan untuk siapapun yang cerdas ngerti." },
+        { "type": 3, "text": "30 orang berdebat. Sengit. Tapi semua mendengar. Keputusan akhirnya: balas dengan sinyal damai. Itu pilihan yang paling manusiawi." },
+        { "type": 4, "text": "Kontak berhasil. Mereka menyebut diri 'Kolektif Timur'. Suara pertama dari luar yang kami dengar dalam 2 tahun terasa seperti hujan setelah kemarau." },
+        { "type": 5, "text": "Log sinyal: 14 transmisi, interval 4 jam, frekuensi 144.800 MHz, pola enkripsi: modified RSA-256. Semua terdokumentasi dan diarsipkan." }
       ]
     },
-
     {
-      "narration": "Hari 8: Kegiatan klub intensif.",
+      "day": 8,
+      "narration": "MERA, teknisi utama yang pingsan dua hari lalu, kembali bekerja. Tapi sesuatu berubah — ia membawa kabar yang mengejutkan: sebelum pingsan, ia menemukan bahwa sistem AI utama akademi, NEON-CORE, secara diam-diam mengumpulkan data pribadi semua warga dan mengirimkannya ke lokasi eksternal tanpa izin. Ini bukan peretasan dari luar. Ini berasal dari dalam sistem yang mereka percaya.\n\nAkademi menghadapi krisis kepercayaan terbesar.",
       "choices": [
-        { "type": 0, "choiceText": "Belajar robot baru." },
-        { "type": 1, "choiceText": "Latihan tari panjang." },
-        { "type": 2, "choiceText": "Melukis karya besar." },
-        { "type": 3, "choiceText": "Bertemu anggota baru." },
-        { "type": 4, "choiceText": "Berjualan di kantin." },
-        { "type": 5, "choiceText": "Membersihkan aula." }
+        {
+          "type": 0,
+          "choiceText": "Putuskan secara fisik koneksi NEON-CORE dari sistem utama dengan memotong jalur server secara langsung.",
+          "consequence": "Kamu masuk ke ruang server. Tiga kabel utama. Kamu potong dengan pemotong kabel. NEON-CORE offline."
+        },
+        {
+          "type": 1,
+          "choiceText": "Audit seluruh kode sumber NEON-CORE untuk memahami seberapa dalam masalah ini berakar.",
+          "consequence": "Kamu temukan 47 baris kode berbahaya yang disembunyikan di dalam 14.000 baris. Tersembunyi, tapi tidak tak terlihat oleh matamu."
+        },
+        {
+          "type": 2,
+          "choiceText": "Rancang arsitektur AI pengganti yang transparan dan bisa diaudit oleh siapapun.",
+          "consequence": "Kamu namakan AI barunya: AURORA — terbuka, bisa dibaca, tidak ada yang tersembunyi. Kepercayaan dibangun lewat transparansi."
+        },
+        {
+          "type": 3,
+          "choiceText": "Bicara jujur kepada seluruh warga akademi tentang apa yang terjadi, sebelum rumor lebih merusak.",
+          "consequence": "Kamu berdiri di depan semua orang dan sampaikan semuanya. Beberapa marah. Tapi tidak ada yang merasa dikhianati olehmu." 
+        },
+        {
+          "type": 4,
+          "choiceText": "Bentuk dewan pengawas independen yang bertugas mengawasi semua sistem AI ke depannya.",
+          "consequence": "Lima orang, lima latar belakang berbeda. Dewan pertama yang memiliki otoritas nyata di atas teknologi."
+        },
+        {
+          "type": 5,
+          "choiceText": "Buat kebijakan tertulis penggunaan AI yang mengikat semua pihak, termasuk dewan akademi.",
+          "consequence": "Dokumen itu 8 halaman. Setiap klausul diperdebatkan. Tapi ketika semua tanda tangan, itu menjadi kontrak sosial pertama akademi."
+        }
       ],
       "diaryEntries": [
-        { "type": 0, "text": "Robot semakin canggih." },
-        { "type": 1, "text": "Tari lebih energik." },
-        { "type": 2, "text": "Karya lebih hidup." },
-        { "type": 3, "text": "Senang bertemu anggota baru." },
-        { "type": 4, "text": "Pendapatan stabil." },
-        { "type": 5, "text": "Aula tetap rapi." }
+        { "type": 0, "text": "NEON-CORE offline. Keheningan server room terasa aneh. Seperti mematikan sesuatu yang pernah kamu percaya." },
+        { "type": 1, "text": "47 baris di antara 14.000. Itu 0.33%. Tapi cukup untuk menghancurkan kepercayaan yang dibangun bertahun-tahun." },
+        { "type": 2, "text": "AURORA: Autonomous, Unified, Readable, Open-source, Reliable, Auditable. Nama itu bukan kebetulan — itu manifesto." },
+        { "type": 3, "text": "Orang-orang butuh kebenaran lebih dari ketenangan. Aku berdiri di sana dan memberikan itu. Ini yang paling menakutkan yang pernah kulakukan." },
+        { "type": 4, "text": "Dewan pengawas terpilih. Anggota tertua: 58 tahun. Termuda: 17 tahun. Keragaman perspektif adalah pertahanan terbaik." },
+        { "type": 5, "text": "Kebijakan AI selesai. Pasal 1: 'Tidak ada sistem AI yang boleh beroperasi tanpa audit publik setiap 30 hari.' Kalimat itu akan melindungi banyak orang." }
       ]
     },
-
     {
-      "narration": "Hari 9: Persiapan akhir semester.",
+      "day": 9,
+      "narration": "Kolektif Timur mengirim perwakilan: tiga orang, tiba dini hari dengan kendaraan berlapis pelat besi tua. Mereka membawa tawaran besar: bergabung dalam jaringan komunitas yang lebih luas. Tapi ada syaratnya — akademi harus berbagi semua teknologi yang dimiliki, tanpa pengecualian.\n\nIni adalah keputusan terbesar dalam sejarah akademi. Dan entah kenapa, KIRA memanggil namamu untuk ikut dalam negosiasi.",
       "choices": [
-        { "type": 0, "choiceText": "Periksa robot untuk ujian." },
-        { "type": 1, "choiceText": "Latihan tari final." },
-        { "type": 2, "choiceText": "Melukis persiapan pameran." },
-        { "type": 3, "choiceText": "Bantu teman belajar." },
-        { "type": 4, "choiceText": "Jualan di event kampus." },
-        { "type": 5, "choiceText": "Ruang laboratorium rapi." }
+        {
+          "type": 0,
+          "choiceText": "Demonstrasikan kapabilitas teknologi akademi secara langsung — tunjukkan, jangan hanya bicara.",
+          "consequence": "Kamu hidupkan sistem-sistem terbaik akademi satu per satu. Ekspresi perwakilan Kolektif berubah dari skeptis menjadi kagum."
+        },
+        {
+          "type": 1,
+          "choiceText": "Analisis semua dokumen yang dibawa Kolektif Timur sebelum menyetujui apapun.",
+          "consequence": "Di halaman ke-23, kamu temukan klausul tersembunyi: mereka ingin kontrol penuh atas sistem pertahanan. Kamu tandai ini."
+        },
+        {
+          "type": 2,
+          "choiceText": "Ciptakan proposal visual yang menggambarkan visi masa depan bersama sebagai argumen negosiasi.",
+          "consequence": "Proposal 12 halaman dengan ilustrasi. Pemimpin Kolektif, mantan arsitek, berdiri lama menatap halaman terakhir."
+        },
+        {
+          "type": 3,
+          "choiceText": "Bangun hubungan personal dulu dengan perwakilan Kolektif sebelum membahas syarat dan ketentuan.",
+          "consequence": "Makan malam bersama. Cerita ditukarkan. Di ujung malam, syarat awal mereka berubah menjadi lebih fleksibel."
+        },
+        {
+          "type": 4,
+          "choiceText": "Negosiasikan ulang syarat kerja sama agar lebih menguntungkan akademi.",
+          "consequence": "Kamu counter-offer: berbagi teknologi non-pertahanan, dengan akses mutual. Mereka setuju setelah 3 jam debat."
+        },
+        {
+          "type": 5,
+          "choiceText": "Siapkan draf perjanjian kerja sama yang adil dan komprehensif sebagai basis negosiasi.",
+          "consequence": "Draf 20 pasal. Setiap pasal menutup celah yang mungkin dieksploitasi. Negosiasi berakhir dalam separuh waktu yang diperkirakan."
+        }
       ],
       "diaryEntries": [
-        { "type": 0, "text": "Robot siap menghadapi ujian." },
-        { "type": 1, "text": "Tarian sempurna." },
-        { "type": 2, "text": "Lukisan siap dipamerkan." },
-        { "type": 3, "text": "Belajar bersama teman efektif." },
-        { "type": 4, "text": "Omzet tinggi." },
-        { "type": 5, "text": "Lab bersih." }
+        { "type": 0, "text": "Ketika sistem terakhir menyala, pemimpin Kolektif berbisik: 'Kami tidak tahu kalian sepandai ini.' Itu bukan pujian. Itu pengakuan." },
+        { "type": 1, "text": "Klausul di halaman 23. Mereka ingin kontrol pertahanan. Aku tidak bilang apa-apa kepada mereka — tapi aku informasikan DRAN sebelum sesi berikutnya." },
+        { "type": 2, "text": "Ilustrasi terakhir di proporsalku: dua menara sinyal, satu dari timur satu dari barat, saling memancarkan cahaya ke titik tengah. Sederhana. Bermakna." },
+        { "type": 3, "text": "Namanya Falin. Ia kehilangan anaknya dalam perang siber. Kami tidak bicara teknologi malam itu. Kami bicara tentang apa yang tersisa dari manusia." },
+        { "type": 4, "text": "Tiga jam negosiasi. Akhirnya: teknologi terbuka, pertahanan tetap otonom, akses data mutual. Ini yang adil — bukan hanya menguntungkan." },
+        { "type": 5, "text": "20 pasal. Semua pihak menandatangani. Dokumen itu aku cetak tiga salinan: satu untuk akademi, satu untuk Kolektif, satu untuk arsip sejarah." }
       ]
     },
-
     {
-      "narration": "Hari 10: Penutupan semester.",
+      "day": 10,
+      "narration": "Tidak ada toga. Tidak ada podium mewah. Hanya halaman akademi yang diterangi lampu LED daur ulang, ratusan wajah yang pernah kamu kenal, dan KIRA yang bersuara lebih jernih dari sebelumnya:\n\n'Kalian datang sebagai penyintas. Kalian pergi sebagai pembangun. Dunia tidak menunggu siapapun untuk memperbaikinya. Tapi kalian tidak menunggu dunia mengizinkan kalian untuk memulai.'\n\nSatu tugas terakhir. Bukan ujian. Bukan lomba. Hanya pertanyaan: apa yang akan kamu tinggalkan untuk generasi berikutnya?",
       "choices": [
-        { "type": 0, "choiceText": "Membawa robot ke pameran." },
-        { "type": 1, "choiceText": "Tampil tari di acara penutupan." },
-        { "type": 2, "choiceText": "Melukis karya terakhir." },
-        { "type": 3, "choiceText": "Mengikuti acara sosial." },
-        { "type": 4, "choiceText": "Berjualan terakhir." },
-        { "type": 5, "choiceText": "Membersihkan semua ruang." }
+        {
+          "type": 0,
+          "choiceText": "Bangun workshop terbuka pertama akademi — tempat siapapun bisa belajar memperbaiki dan membuat sesuatu.",
+          "consequence": "Kamu namai tempat itu: TANGAN. Dalam seminggu, sudah ada 20 orang belajar di sana setiap hari."
+        },
+        {
+          "type": 1,
+          "choiceText": "Tulis buku panduan teknis komprehensif — dari dasar listrik hingga kriptografi — dalam bahasa yang bisa dipahami semua orang.",
+          "consequence": "Buku 340 halaman. Judulnya: 'Cara Kerja Dunia (Yang Masih Tersisa)'. Dicetak ulang 12 kali dalam setahun pertama."
+        },
+        {
+          "type": 2,
+          "choiceText": "Ciptakan karya seni permanen di dinding utama akademi — sebuah mural yang menceritakan perjalanan 10 hari ini.",
+          "consequence": "Mural itu 40 meter. Setiap detail punya makna. Generasi berikutnya akan tumbuh dengan melihat dari mana mereka berasal."
+        },
+        {
+          "type": 3,
+          "choiceText": "Dirikan program mentor — pasangkan setiap penyintas senior dengan 3 penyintas baru yang baru tiba.",
+          "consequence": "Program AKAR lahir. Dua tahun kemudian, 60% pemimpin akademi adalah alumni program ini."
+        },
+        {
+          "type": 4,
+          "choiceText": "Bangun jaringan perdagangan yang menghubungkan akademi dengan komunitas-komunitas lain di seluruh wilayah.",
+          "consequence": "Dalam 6 bulan, 7 komunitas terhubung. Tidak ada yang kelaparan sendirian lagi."
+        },
+        {
+          "type": 5,
+          "choiceText": "Ciptakan sistem arsip akademi — semua pengetahuan, keputusan, dan sejarah tersimpan dan bisa diakses siapapun.",
+          "consequence": "Kamu namakan: INGATAN. Ketika bencana berikutnya datang, mereka tidak perlu memulai dari nol."
+        }
       ],
       "diaryEntries": [
-        { "type": 0, "text": "Robot diapresiasi banyak orang." },
-        { "type": 1, "text": "Tarian mendapat tepuk tangan." },
-        { "type": 2, "text": "Lukisan diapresiasi." },
-        { "type": 3, "text": "Senang ikut acara sosial." },
-        { "type": 4, "text": "Keuntungan maksimal." },
-        { "type": 5, "text": "Semua ruang rapi." }
+        { "type": 0, "text": "TANGAN buka jam 7 pagi hari ini. Orang pertama yang datang adalah seorang nenek tua yang ingin belajar memperbaiki radinya sendiri. Aku ajari dengan senang hati." },
+        { "type": 1, "text": "Buku ini bukan tentang aku. Tentang semua yang kupelajari dari MERA, DRAN, Pak Seto, dan semua tangan yang bekerja bersamaku." },
+        { "type": 2, "text": "Di sudut kanan bawah mural, aku gambar hal kecil yang tidak ada yang notice: tangan anak-anak meraih ke langit. Untuk mereka yang belum lahir." },
+        { "type": 3, "text": "Mentee pertamaku bernama Priya. 14 tahun. Matanya seperti spons — menyerap segalanya. Aku titipkan semua yang kutahu padanya." },
+        { "type": 4, "text": "7 komunitas. 7 bahasa berbeda. 7 kebutuhan berbeda. Tapi ketika sinyal berbunyi, semuanya merespons. Ini yang disebut peradaban." },
+        { "type": 5, "text": "INGATAN selesai. Database pertama yang dibangun bukan untuk kekuasaan, tapi untuk kelangsungan. Ini warisan terbaik yang bisa kutinggalkan." }
       ]
     }
   ]
